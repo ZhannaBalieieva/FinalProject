@@ -7,7 +7,7 @@ class Record:
 
     def __init__(self, name, phones='', birthday='', email='', status='', note=''):
 
-        @abstractmethod
+        @abstractmethod   
         def birthday(self):
             self.birthday = birthday
         def name(self):
@@ -32,14 +32,14 @@ class Record:
         return result.days
 
 
-class Field(ABC):
+class Field(ABC):                #АБСТРАКТНЫЙ КЛАСС
 
     @abstractmethod
     def __getitem__(self):
         pass
 
 
-class Name(Field):
+class Name(Field):                 #НАСЛЕДОВАНИЕ ОТ АБСТРАКТНОГО КЛАССА
     def __init__(self, value):
         self.value = value
 
@@ -47,7 +47,7 @@ class Name(Field):
         return self.value
 
 
-class Phone(Field):
+class Phone(Field):      #НАСЛЕДОВАНИЕ ОТ АБСТРАКТНОГО КЛАССА
 
     def __init__(self, value=''):
         while True:
@@ -71,7 +71,7 @@ class Phone(Field):
         return self.value
 
 
-class Birthday(Field):
+class Birthday(Field):   #НАСЛЕДОВАНИЕ ОТ АБСТРАКТНОГО КЛАССА
 
     def __init__(self, value=''):
         while True:
@@ -94,7 +94,7 @@ class Birthday(Field):
         return self.value
 
 
-class Email(Field):
+class Email(Field):           #НАСЛЕДОВАНИЕ ОТ АБСТРАКТНОГО КЛАССА
     def __init__(self, value=''):
         while True:
 
@@ -114,7 +114,7 @@ class Email(Field):
         return self.value
 
 
-class Status(Field):
+class Status(Field):           #НАСЛЕДОВАНИЕ ОТ АБСТРАКТНОГО КЛАССА
 
     def __init__(self, value=''):
         while True:
