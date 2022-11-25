@@ -141,3 +141,25 @@ class Note(Field):
 
     def __getitem__(self):
         return self.value
+
+
+class UserdataReport(Field):
+    
+    def name(self):
+        return UserdataReport()
+
+    def birthday(self):
+        return UserdataReport()
+
+    def phones(self):
+        return UserdataReport()
+
+    def email(self):
+        return UserdataReport()
+
+    def status(self):
+        return UserdataReport()
+
+    def note(self):
+        return UserdataReport()
+
