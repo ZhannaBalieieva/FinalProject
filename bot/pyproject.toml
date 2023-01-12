@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "bot-project"
+version = "0.1.0"
+description = ""
+authors = ["ZhannaBalieieva <thebestofthebestv@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bot_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^1.4.46"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
